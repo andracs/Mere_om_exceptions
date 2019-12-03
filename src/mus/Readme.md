@@ -1,4 +1,8 @@
+# MUS!!! Spil med pebbernødder udviklet i klassen
 
+Projektet indeholder et antal TODO's, som du kan se i IntelliJ. Fork projektet, og lav så mange todos, som du kan nå!
+
+## Færdige features
 OK Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
 
 OK Computeren vælger en pebernød.
@@ -13,4 +17,6 @@ OK Spillet spilles, indtil der ikke er flere pebernøder.
 
 OK Spillet skal gemme loggen i nutlog.txt, som indeholder alle gæt. 
 
-// TODO  For viderekomne: Man skulle kunne gemme spillet undervejs i filen nut.save og indlæse det igen når programmet starter! 
+## For viderekomne
+
+Man skulle kunne gemme spillet undervejs i filen nut.save og indlæse det igen når programmet starter! 
