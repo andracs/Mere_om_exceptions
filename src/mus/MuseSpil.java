@@ -14,8 +14,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class MuseSpil {
 
     // Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
-    public int minNuts = 60;
-    public int maxNuts = 120;
+    public int minNuts = 5;
+    public int maxNuts = 10;
     public int antalNuts;
     private int valgteNut;
     public int brugerensGaet;
@@ -46,12 +46,24 @@ public class MuseSpil {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             brugerensGaet = scanner.nextInt();
+            nutCount[brugerensGaet-1] = false;
+            System.out.println("Kurven med nødder : " + Arrays.toString(nutCount));
             if (brugerensGaet == valgteNut) {
                 System.out.println("Muuuus!");
                 System.out.println("En ny nød er valgt.");
                 chooseNut();
             } else {
                 System.out.println("Haps, brugeren har spist nødden.");
+            }
+            boolean erAltSpist = true;
+            for (int i = 0; i < nutCount.length; i++) {
+                if (nutCount[i] == true) {
+                    erAltSpist = false;
+                }
+            }
+            if (erAltSpist) {
+                System.out.println("I har spist alt");
+                System.exit(1);
             }
         }
     }
