@@ -1,15 +1,14 @@
-
-5 nødder er lavet.
-Den valgte nød er 1.
+Musespillets log 
+ ***************
+7 nødder er lavet.
+Den valgte nød er 2.
+Haps, brugeren har spist nødden.
+Muuuus! En ny nød er valgt.
+Den valgte nød er 6.
 Haps, brugeren har spist nødden.
 Haps, brugeren har spist nødden.
 Haps, brugeren har spist nødden.
 Muuuus! En ny nød er valgt.
-Den valgte nød er 4.
-Muuuus! En ny nød er valgt.
-Den valgte nød er 1.
-Haps, brugeren har spist nødden.
-Muuuus! En ny nød er valgt.
-Den valgte nød er 4.
+Den valgte nød er 3.
 Haps, brugeren har spist nødden.
 I har spist alt

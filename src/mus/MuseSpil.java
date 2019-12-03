@@ -30,7 +30,7 @@ public class MuseSpil {
     public int brugerensGaet;
     // TODO refaktorer således, så arrayet hedder kurven og ikke nutCount
     public boolean nutCount[];
-    private String log = "";
+    private String log = "Musespillets log \n ***************";
 
     public void generateNuts() {
         // TODO Ryd op i kommentarer herunder
@@ -85,7 +85,7 @@ public class MuseSpil {
                 }
             }
             if (erAltSpist) {
-                String logbesked = "I har spist alt";
+                String logbesked = "I har spist alle pebernødder!";
                 System.out.println(logbesked);
                 log = log + "\n" + logbesked;
                 saveToFile();
