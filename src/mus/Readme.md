@@ -1,7 +1,7 @@
 
-Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
+OK Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
 
-Computeren vælger en pebernød.
+OK Computeren vælger en pebernød.
 
 Nu skal brugeren gætte, hvilken pebernød computeren har valgt. 
 
