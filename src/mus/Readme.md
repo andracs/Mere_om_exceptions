@@ -1,4 +1,4 @@
-# MUS!!! Spil med pebbernødder udviklet i klassen
+# MUS! - Spil med pebbernødder, udviklet i klassen
 
 Projektet indeholder et antal TODO's, som du kan se i IntelliJ. Fork projektet, og lav så mange todos, som du kan nå!
 
