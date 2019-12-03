@@ -13,8 +13,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class MuseSpil {
 
     // Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
-    public int minNuts = 1;
-    public int maxNuts = 3;
+    public int minNuts = 60;
+    public int maxNuts = 120;
     public int antalNuts;
     private int valgteNut;
     public int brugerensGaet;
@@ -39,11 +39,14 @@ public class MuseSpil {
     // Nu skal brugeren gætte, hvilken pebernød computeren har valgt.
     public void brugerenGaetter() {
         Scanner scanner = new Scanner(System.in);
-        brugerensGaet = scanner.nextInt();
-        if (brugerensGaet==valgteNut) {
-            System.out.println("Muuusss!");
-        } else {
-            System.out.println("Haps, brugeren har spist nødden.");
+        while (true) {
+            brugerensGaet = scanner.nextInt();
+            if (brugerensGaet == valgteNut) {
+                System.out.println("Muuusss!");
+                break;
+            } else {
+                System.out.println("Haps, brugeren har spist nødden.");
+            }
         }
     }
 
