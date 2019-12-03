@@ -111,4 +111,5 @@ public class MuseSpil {
 }
 
 // TODO  For viderekomne: Man skulle kunne gemme spillet undervejs i filen nut.save og indlæse det igen når programmet starter!
-// TODO lav en klassediagram til readme til sidst
+// TODO Allersidst - lav en klassediagram som dokumentation
+// TODO Allersidst - javadoc
