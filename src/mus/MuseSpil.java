@@ -6,6 +6,10 @@
  */
 package mus;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -20,6 +24,7 @@ public class MuseSpil {
     private int valgteNut;
     public int brugerensGaet;
     public boolean nutCount[];
+    private String log;
 
     public void generateNuts() {
         // FORKERT antalNuts = (int) Math.random() * maxNuts - minNuts;
@@ -27,7 +32,9 @@ public class MuseSpil {
         // TAK Anders --> Den er fed til at lave tilfældige tal:
         Random random = new Random();
         antalNuts = random.nextInt(maxNuts - minNuts) + minNuts;
-        System.out.println(antalNuts + " nødder er lavet.");
+        String logbesked =  antalNuts + " nødder er lavet.";
+        System.out.println(logbesked);
+        log = log + "\n" + logbesked;
         nutCount = new boolean[antalNuts];
         Arrays.fill(nutCount, true); // Posen (arrayet) er fyldt med pebernødder
         System.out.println("Kurven med nødder : " + Arrays.toString(nutCount));
@@ -37,7 +44,10 @@ public class MuseSpil {
     protected int chooseNut() {
         Random random = new Random();
         valgteNut = random.nextInt(antalNuts - 1) + 1;
-        System.out.println("Den valgte nød er " + valgteNut + ".");
+        String logbesked = "Den valgte nød er " + valgteNut + ".";
+        System.out.println(logbesked);
+        log = log + "\n" + logbesked;
+
         return valgteNut;
     }
 
@@ -49,11 +59,14 @@ public class MuseSpil {
             nutCount[brugerensGaet-1] = false;
             System.out.println("Kurven med nødder : " + Arrays.toString(nutCount));
             if (brugerensGaet == valgteNut) {
-                System.out.println("Muuuus!");
-                System.out.println("En ny nød er valgt.");
+                String logbesked = "Muuuus! En ny nød er valgt.";
+                System.out.println(logbesked);
+                log = log + "\n" + logbesked;
                 chooseNut();
             } else {
-                System.out.println("Haps, brugeren har spist nødden.");
+                String logbesked = "Haps, brugeren har spist nødden.";
+                System.out.println(logbesked);
+                log = log+ "\n"  + logbesked;
             }
             boolean erAltSpist = true;
             for (int i = 0; i < nutCount.length; i++) {
@@ -62,11 +75,25 @@ public class MuseSpil {
                 }
             }
             if (erAltSpist) {
-                System.out.println("I har spist alt");
+                String logbesked = "I har spist alt";
+                System.out.println(logbesked);
+                log = log + "\n" + logbesked;
+                saveToFile();
                 System.exit(1);
             }
         }
     }
 
+    public void saveToFile() {
+        try {
+            File file = new File("src/mus/log.txt");
+            PrintWriter output = new PrintWriter(file);
+            output.print(log);
+            output.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
