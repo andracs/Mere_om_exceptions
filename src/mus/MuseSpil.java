@@ -32,6 +32,10 @@ public class MuseSpil {
     public boolean nutCount[];
     private String log = "Musespillets log \n ***************";
 
+    // TODO lav en  constructor, som sætter minNuts og MaxNuts
+    // TODO lav en anden constructor, som sætter antalNuts
+
+
     public void generateNuts() {
         // TODO Ryd op i kommentarer herunder
         // FORKERT antalNuts = (int) Math.random() * maxNuts - minNuts;
@@ -111,7 +115,7 @@ public class MuseSpil {
     }
 
 }
-
+// TODO Refaktorer, så instansvariabler bliver private, og der er kun de getters og setters, der skal bruges
 // TODO  For viderekomne: Man skulle kunne gemme spillet undervejs i filen nut.save og indlæse det igen når programmet starter!
 // TODO Allersidst - lav en klassediagram som dokumentation
 // TODO Allersidst - javadoc
