@@ -65,6 +65,7 @@ public class MuseSpil {
             // TODO gør input mere brugervenlig tved at skrive "Hvilken nød vil du spise?"
             // TODO håndter forkert indtastning med InvalidParameterException eller din egen PeppernutExceprion som extender InvalidParameterException
             brugerensGaet = scanner.nextInt();
+            // TODO Hvilken nød har brugeren spist? Skriv "Brugeren spiser nød x." i loggen og på skærmen.
             nutCount[brugerensGaet-1] = false;
             // TODO fjern visning af array
             System.out.println("Kurven med nødder : " + Arrays.toString(nutCount));
@@ -74,6 +75,7 @@ public class MuseSpil {
                 log = log + "\n" + logbesked;
                 chooseNut();
             } else {
+                // TODO Hvilken nød har brugeren spist? Skriv tallet...
                 String logbesked = "Haps, brugeren har spist nødden.";
                 System.out.println(logbesked);
                 log = log+ "\n"  + logbesked;
