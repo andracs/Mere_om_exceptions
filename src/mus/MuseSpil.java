@@ -6,6 +6,7 @@
  */
 package mus;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
@@ -18,6 +19,7 @@ public class MuseSpil {
     public int antalNuts;
     private int valgteNut;
     public int brugerensGaet;
+    public boolean nutCount[];
 
     public void generateNuts() {
         // FORKERT antalNuts = (int) Math.random() * maxNuts - minNuts;
@@ -26,6 +28,9 @@ public class MuseSpil {
         Random random = new Random();
         antalNuts = random.nextInt(maxNuts - minNuts) + minNuts;
         System.out.println(antalNuts + " nødder er lavet.");
+        nutCount = new boolean[antalNuts];
+        Arrays.fill(nutCount, true); // Posen (arrayet) er fyldt med pebernødder
+        System.out.println("Kurven med nødder : " + Arrays.toString(nutCount));
     }
 
     // Computeren vælger en pebernød
