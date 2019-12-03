@@ -3,14 +3,14 @@ OK Mus begynder med at der genereres et antal pebernødder (ca. 60-120)
 
 OK Computeren vælger en pebernød.
 
-Nu skal brugeren gætte, hvilken pebernød computeren har valgt. 
+OK Nu skal brugeren gætte, hvilken pebernød computeren har valgt. 
 
-Når det er gættet, skal computeren skrive "Muuuus!"
+OK Når det er gættet, skal computeren skrive "Muuuus!"
 
-Nu skal computeren vælge en ny pebernød.
+OK Nu skal computeren vælge en ny pebernød.
 
-Spillet spilles, indtil der ikke er flere pebernøder.
+OK Spillet spilles, indtil der ikke er flere pebernøder.
 
-Spillet skal gemme loggen i savefil.txt, som indeholder alle gæt. 
+OK Spillet skal gemme loggen i nutlog.txt, som indeholder alle gæt. 
 
-For viderekomne: Man skulle kunne gemme spillet undervejs og indlæse det igen! 
+// TODO  For viderekomne: Man skulle kunne gemme spillet undervejs i filen nut.save og indlæse det igen når programmet starter! 

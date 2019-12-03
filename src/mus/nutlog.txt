@@ -1,9 +1,13 @@
-null
-6 nødder er lavet.
-Den valgte nød er 5.
+
+5 nødder er lavet.
+Den valgte nød er 1.
 Haps, brugeren har spist nødden.
 Haps, brugeren har spist nødden.
 Haps, brugeren har spist nødden.
+Muuuus! En ny nød er valgt.
+Den valgte nød er 4.
+Muuuus! En ny nød er valgt.
+Den valgte nød er 1.
 Haps, brugeren har spist nødden.
 Muuuus! En ny nød er valgt.
 Den valgte nød er 4.
