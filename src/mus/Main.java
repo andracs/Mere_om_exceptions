@@ -25,6 +25,11 @@ public class Main {
 
         System.out.println(" Mus + spil i et! ");
 
+        MuseSpil spil = new MuseSpil();
+        spil.generateNuts();
+        spil.chooseNut();
+        spil.brugerenGaetter();
+
 
 
     }
