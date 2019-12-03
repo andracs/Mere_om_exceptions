@@ -42,8 +42,9 @@ public class MuseSpil {
         while (true) {
             brugerensGaet = scanner.nextInt();
             if (brugerensGaet == valgteNut) {
-                System.out.println("Muuusss!");
-                break;
+                System.out.println("Muuuus!");
+                System.out.println("En ny nød er valgt.");
+                chooseNut();
             } else {
                 System.out.println("Haps, brugeren har spist nødden.");
             }
